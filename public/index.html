@@ -609,7 +609,7 @@ footer{
   </ul>
   <div class="nav-pill">
     <div class="live-dot"></div>
-    Ochiq ishlashga
+    Available for work
   </div>
 </nav>
 
@@ -622,7 +622,7 @@ footer{
     <span class="fire">qilaman.</span>
   </h1>
   <p class="hero-desc">
-    After Effects va Premiere Pro'da professional montaj. Har bir kadr — his, har bir kesim — asar. Sizning g'oyangizni ekranga olib chiqaman.
+    After Effects va Premiere Pro'da professional montaj. Har bir kadr — his, har bir kesim — asar. Your idea into ekranga olib chiqaman.
   </p>
   <div class="hero-actions">
     <button class="btn-fire" onclick="document.getElementById('works').scrollIntoView({behavior:'smooth'})">
@@ -643,7 +643,7 @@ footer{
 <section id="stats">
   <div class="stat-item reveal">
     <div class="stat-n">1<sup>yil</sup></div>
-    <div class="stat-l">Tajriba</div>
+    <div class="stat-l">Experience</div>
   </div>
   <div class="stat-item reveal" style="transition-delay:.1s">
     <div class="stat-n">20<sup>+</sup></div>
@@ -662,7 +662,7 @@ footer{
 <!-- MARQUEE -->
 <div class="marquee-wrap">
   <div class="marquee-track">
-    <div class="m-item">Video Montaj <span>✦</span></div>
+    <div class="m-item">Video Editing <span>✦</span></div>
     <div class="m-item">After Effects <span>✦</span></div>
     <div class="m-item">Premiere Pro <span>✦</span></div>
     <div class="m-item">Color Grading <span>✦</span></div>
@@ -670,7 +670,7 @@ footer{
     <div class="m-item">Sound Design <span>✦</span></div>
     <div class="m-item">Visual Effects <span>✦</span></div>
     <div class="m-item">Transitions <span>✦</span></div>
-    <div class="m-item">Video Montaj <span>✦</span></div>
+    <div class="m-item">Video Editing <span>✦</span></div>
     <div class="m-item">After Effects <span>✦</span></div>
     <div class="m-item">Premiere Pro <span>✦</span></div>
     <div class="m-item">Color Grading <span>✦</span></div>
@@ -685,9 +685,9 @@ footer{
 <section id="about">
   <div class="about-grid">
     <div class="about-left reveal">
-      <div class="sec-label">Men haqimda</div>
+      <div class="sec-label">About Me</div>
       <h2 class="about-h2">Har bir kadr<br>bir <em>hikoya</em></h2>
-      <p class="about-p">Men — Sarmix. Video montajchi va motion dizayner. After Effects va Premiere Pro'da 1 yillik tajribam bor. Videolarni oddiy klipdan hissiyot uyg'otuvchi asarga aylantiraman.</p>
+      <p class="about-p">Men — Sarmix. Video montajchi va motion dizayner. After Effects va Premiere Pro'da 1 years experiencem bor. Videolarni oddiy klipdan hissiyot uyg'otuvchi asarga aylantiraman.</p>
       <p class="about-p">Har bir proyektga alohida e'tibor beraman. Rang tuzatishdan tortib murakkab effektlargacha — sifat har doim birinchi o'rinda.</p>
       <div class="about-tags">
         <span class="atag">Video Editing</span>
@@ -748,10 +748,10 @@ footer{
   <div class="sec-header reveal">
     <div class="sec-title-wrap">
       <div class="sec-label">Portfolio</div>
-      <h2>Mening ishlarim</h2>
+      <h2>My Works</h2>
     </div>
     <div class="filter-tabs">
-      <button class="ftab active" data-filter="all">Barchasi</button>
+      <button class="ftab active" data-filter="all">All</button>
       <button class="ftab" data-filter="reels">Reels</button>
       <button class="ftab" data-filter="speedramp">Speed Ramp</button>
     </div>
@@ -765,13 +765,13 @@ footer{
   <div class="sec-header reveal">
     <div class="sec-title-wrap">
       <div class="sec-label">Xizmatlar</div>
-      <h2>Nima qila olaman</h2>
+      <h2>What I Can Do</h2>
     </div>
   </div>
   <div class="svc-grid">
     <div class="svc-card reveal">
       <div class="svc-icon-wrap">🎬</div>
-      <div class="svc-title">Video Montaj</div>
+      <div class="svc-title">Video Editing</div>
       <div class="svc-desc">Premiere Pro'da professional montaj. YouTube, Instagram Reels, TikTok, reklama va boshqa formatlar uchun.</div>
       <div class="svc-price">→ Narxini so'rash</div>
     </div>
@@ -932,262 +932,148 @@ document.querySelectorAll('.ftab').forEach(tab=>{
 
 <script>
 (function () {
-  const API = 'https://railway-up-production-7c03.up.railway.app/api/videos';
-  let allVideos = [];
+  const videos = [{"filename": "Cargo Org(1).mp4", "title": "Cargo Org", "tag": "reels", "url": "/Cargo%20Org%281%29.mp4"}, {"filename": "Chg(1).mp4", "title": "CHG Edit", "tag": "speedramp", "url": "/Chg%281%29.mp4"}, {"filename": "Ful Blen 3 Tvai.mp4", "title": "Blend Edit", "tag": "motion", "url": "/Ful%20Blen%203%20Tvai.mp4"}, {"filename": "Hayit L(1).mp4", "title": "Hayit", "tag": "reels", "url": "/Hayit%20L%281%29.mp4"}, {"filename": "I Get It Full 1 Prob4.mp4", "title": "I Get It", "tag": "speedramp", "url": "/I%20Get%20It%20Full%201%20Prob4.mp4"}, {"filename": "Speedramp+Reels.mp4", "title": "Speedramp+Reels", "tag": "reels", "url": "/Speedramp%2BReels.mp4"}, {"filename": "Topdoc Zzzzzz(1).mp4", "title": "Topdoc", "tag": "reels", "url": "/Topdoc%20Zzzzzz%281%29.mp4"}, {"filename": "video_2026-05-25_10-03-08.mp4", "title": "Video Edit", "tag": "reels", "url": "/video_2026-05-25_10-03-08.mp4"}];
 
   function tagClass(tag) {
-    return tag === 'reels' ? 'vtag-r' : tag === 'speedramp' ? 'vtag-s' : 'vtag-rs';
+    return tag === 'reels' ? 'vtag-r' : tag === 'speedramp' ? 'vtag-s' : tag === 'motion' ? 'vtag-rs' : 'vtag-r';
   }
   function tagLabel(tag) {
     return tag === 'reels' ? 'Reels' : tag === 'speedramp' ? 'Speed Ramp' : tag === 'motion' ? 'Motion' : tag;
   }
 
-  // Canvas orqali thumbnail olish
-  function captureThumbnail(videoEl, canvasEl) {
-    videoEl.currentTime = 1.0;
-    videoEl.addEventListener('seeked', function onSeeked() {
-      videoEl.removeEventListener('seeked', onSeeked);
-      try {
-        const ctx = canvasEl.getContext('2d');
-        canvasEl.width  = videoEl.videoWidth  || 360;
-        canvasEl.height = videoEl.videoHeight || 640;
-        ctx.drawImage(videoEl, 0, 0, canvasEl.width, canvasEl.height);
-        canvasEl.style.opacity = '1';
-      } catch(e) {}
-    }, { once: true });
-  }
-
-  // ── Render grid ──────────────────────────────────────────
-  function renderGrid() {
+  function renderGrid(filter) {
     const root = document.getElementById('video-grid-root');
     if (!root) return;
-    const activeTab = document.querySelector('.ftab.active');
-    const filter    = activeTab ? activeTab.dataset.filter : 'all';
-    const filtered  = filter === 'all' ? allVideos : allVideos.filter(v => v.tag === filter);
+    const filtered = (!filter || filter === 'all') ? videos : videos.filter(v => v.tag === filter);
 
-    if (allVideos.length === 0) {
-      root.innerHTML = `<div class="vgrid"><div class="upload-hint">
-        <div class="upload-hint-icon">🎬</div>
-        <div class="upload-hint-title">Hozircha video yo'q</div>
-      </div></div>`;
-      return;
-    }
     if (filtered.length === 0) {
-      root.innerHTML = `<div class="vgrid"><div class="upload-hint">
-        <div class="upload-hint-icon">🔍</div>
-        <div class="upload-hint-title">Bu kategoriyada video yo'q</div>
-      </div></div>`;
+      root.innerHTML = '<div class="vgrid"><div class="upload-hint"><div class="upload-hint-icon">🔍</div><div class="upload-hint-title">No videos in this category</div></div></div>';
       return;
     }
 
-    root.innerHTML = `<div class="vgrid" style="width:100%">${filtered.map(v => `
-      <div class="vcard reveal" data-type="${v.tag}">
-        <div class="vcard-frame" data-url="${v.url}">
-          <canvas class="vcard-canvas"></canvas>
-          <video class="vcard-thumb-video" preload="metadata" muted playsinline crossorigin="anonymous">
-            <source src="${v.url}" type="video/mp4">
-          </video>
-          <div class="vcard-play-btn">
-            <div class="play-tri"></div>
-          </div>
-          <video class="vcard-video" preload="none" playsinline controls>
-            <source src="${v.url}" type="video/mp4">
-          </video>
-        </div>
-        <div class="vcard-body">
-          <div class="vcard-name">${v.title}</div>
-          <div class="vcard-meta">
-            <span class="vtag ${tagClass(v.tag)}">${tagLabel(v.tag)}</span>
-          </div>
-        </div>
-      </div>`).join('')}
-    </div>`;
+    const cards = filtered.map(v => {
+      return '<div class="vcard reveal" data-type="' + v.tag + '">' +
+        '<div class="vcard-frame">' +
+          '<div class="vcard-thumb-placeholder"></div>' +
+          '<div class="vcard-play-btn"><div class="play-tri"></div></div>' +
+          '<video class="vcard-video" preload="none" controls playsinline>' +
+            '<source src="' + v.url + '" type="video/mp4">' +
+          '</video>' +
+        '</div>' +
+        '<div class="vcard-body">' +
+          '<div class="vcard-name">' + v.title + '</div>' +
+          '<div class="vcard-meta"><span class="vtag ' + tagClass(v.tag) + '">' + tagLabel(v.tag) + '</span></div>' +
+        '</div>' +
+      '</div>';
+    }).join('');
 
-    // Thumbnail capture
-    root.querySelectorAll('.vcard-frame').forEach(frame => {
-      const thumbVid = frame.querySelector('.vcard-thumb-video');
-      const canvas   = frame.querySelector('.vcard-canvas');
-      if (thumbVid && canvas) {
-        thumbVid.addEventListener('loadedmetadata', () => {
-          captureThumbnail(thumbVid, canvas);
+    root.innerHTML = '<div class="vgrid">' + cards + '</div>';
+
+    // Capture thumbnails via canvas
+    root.querySelectorAll('.vcard-frame').forEach(function(frame) {
+      var video = frame.querySelector('.vcard-video');
+      var placeholder = frame.querySelector('.vcard-thumb-placeholder');
+
+      // Create canvas thumbnail
+      var canvas = document.createElement('canvas');
+      canvas.className = 'vcard-canvas';
+      frame.insertBefore(canvas, placeholder);
+
+      video.addEventListener('loadedmetadata', function() {
+        video.currentTime = 1;
+      });
+      video.addEventListener('seeked', function() {
+        if (canvas.dataset.captured) return;
+        canvas.dataset.captured = '1';
+        canvas.width = video.videoWidth || 360;
+        canvas.height = video.videoHeight || 640;
+        try {
+          canvas.getContext('2d').drawImage(video, 0, 0, canvas.width, canvas.height);
+          canvas.style.opacity = '1';
+          placeholder.style.display = 'none';
+        } catch(e) {}
+        video.currentTime = 0;
+      });
+
+      // Load metadata for thumbnail
+      video.load();
+
+      // Click to play
+      frame.addEventListener('click', function() {
+        var isPlaying = frame.classList.contains('playing');
+
+        root.querySelectorAll('.vcard-frame.playing').forEach(function(f) {
+          f.classList.remove('playing');
+          f.closest('.vcard').classList.remove('expanded');
+          var v2 = f.querySelector('.vcard-video');
+          if (v2) { v2.pause(); v2.currentTime = 0; }
         });
-      }
-    });
 
-    // Click to play inline
-    root.querySelectorAll('.vcard-frame').forEach(frame => {
-      const video    = frame.querySelector('.vcard-video');
-      const thumbVid = frame.querySelector('.vcard-thumb-video');
-      const card     = frame.closest('.vcard');
-
-      frame.addEventListener('click', () => {
-        // Pause all others
-        root.querySelectorAll('.vcard-frame.playing').forEach(f => {
-          if (f !== frame) {
-            f.querySelector('.vcard-video')?.pause();
-            f.classList.remove('playing');
-            f.closest('.vcard').classList.remove('expanded');
-          }
-        });
-
-        if (frame.classList.contains('playing')) {
-          video.pause();
-          frame.classList.remove('playing');
-          card.classList.remove('expanded');
-        } else {
+        if (!isPlaying) {
           frame.classList.add('playing');
-          card.classList.add('expanded');
-          video.play().catch(() => {});
-          card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+          frame.closest('.vcard').classList.add('expanded');
+          video.play().catch(function(){});
+          frame.closest('.vcard').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
         }
       });
 
-      video.addEventListener('ended', () => {
+      video.addEventListener('ended', function() {
         frame.classList.remove('playing');
-        card.classList.remove('expanded');
+        frame.closest('.vcard').classList.remove('expanded');
       });
     });
 
-    // Reveal
-    setTimeout(() => {
-      root.querySelectorAll('.vcard').forEach((el, i) => {
-        setTimeout(() => el.classList.add('visible'), i * 60);
+    setTimeout(function() {
+      root.querySelectorAll('.vcard').forEach(function(el, i) {
+        setTimeout(function() { el.classList.add('visible'); }, i * 60);
       });
     }, 50);
   }
 
-  async function loadVideos() {
-    try {
-      const res = await fetch(API);
-      allVideos = await res.json();
-    } catch(e) { allVideos = []; }
-    renderGrid();
-  }
-
   function injectStyles() {
-    const s = document.createElement('style');
-    s.textContent = `
-      .vgrid{
-        display:grid;
-        grid-template-columns:repeat(4,1fr);
-        gap:16px;
-        width:100%;
-        align-items:start;
-      }
-      .vcard{
-        border-radius:12px;overflow:hidden;
-        border:1px solid var(--line);
-        background:rgba(255,255,255,0.02);
-        transition:border-color .3s, box-shadow .3s, transform .3s;
-        cursor:pointer;
-      }
-      .vcard:hover{
-        border-color:rgba(255,107,53,0.4);
-        box-shadow:0 20px 60px rgba(255,107,53,0.12);
-        transform:translateY(-4px);
-      }
-      .vcard.expanded{
-        transform:none !important;
-        border-color:rgba(255,107,53,0.6) !important;
-        box-shadow:0 0 0 2px rgba(255,107,53,0.3), 0 24px 60px rgba(255,107,53,0.2) !important;
-        z-index:10;position:relative;
-      }
-      .vcard-frame{
-        position:relative;
-        width:100%;
-        padding-top:177.78%;
-        overflow:hidden;
-        background:#0d0d0f;
-        cursor:pointer;
-      }
-      /* Canvas thumbnail */
-      .vcard-canvas{
-        position:absolute;
-        inset:0;width:100%;height:100%;
-        object-fit:cover;
-        opacity:0;
-        transition:opacity .4s;
-        z-index:1;
-      }
-      /* Hidden video for thumbnail capture */
-      .vcard-thumb-video{
-        position:absolute;
-        width:1px;height:1px;
-        opacity:0;pointer-events:none;
-        z-index:0;
-      }
-      /* Play button */
-      .vcard-play-btn{
-        position:absolute;inset:0;z-index:2;
-        display:flex;align-items:center;justify-content:center;
-        background:rgba(0,0,0,0.2);
-        transition:opacity .25s, background .25s;
-      }
-      .vcard-play-btn::before{
-        content:'';
-        width:54px;height:54px;border-radius:50%;
-        background:rgba(255,107,53,0.15);
-        border:1.5px solid rgba(255,107,53,0.8);
-        position:absolute;
-        transition:all .25s;
-        backdrop-filter:blur(6px);
-      }
-      .play-tri{
-        width:0;height:0;
-        border-top:10px solid transparent;
-        border-bottom:10px solid transparent;
-        border-left:18px solid #fff;
-        margin-left:4px;
-        position:relative;z-index:1;
-      }
-      .vcard:hover .vcard-play-btn::before{
-        background:rgba(255,107,53,0.45);
-        transform:scale(1.1);
-        box-shadow:0 0 30px rgba(255,107,53,0.5);
-      }
-      .vcard-frame.playing .vcard-play-btn{opacity:0;pointer-events:none}
-      .vcard-frame.playing .vcard-canvas{opacity:0}
-      /* Main video */
-      .vcard-video{
-        position:absolute;
-        inset:0;width:100%;height:100%;
-        object-fit:cover;
-        opacity:0;
-        transition:opacity .3s;
-        z-index:3;
-        background:#000;
-      }
-      .vcard-frame.playing .vcard-video{opacity:1}
-      /* Body */
-      .vcard-body{padding:14px 16px}
-      .vcard-name{
-        font-family:'Syne',sans-serif;font-size:13px;font-weight:700;
-        color:#fff;margin-bottom:5px;
-        white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
-      }
-      .vcard-meta{display:flex;align-items:center;gap:8px}
-      /* Hint */
-      .upload-hint{grid-column:1/-1;text-align:center;padding:80px 24px;color:rgba(255,255,255,.25)}
-      .upload-hint-icon{font-size:48px;margin-bottom:16px;opacity:.5}
-      .upload-hint-title{font-family:'Syne',sans-serif;font-size:18px;font-weight:700;color:rgba(255,255,255,.35)}
-      /* Mobile */
-      @media(max-width:768px){
-        .vgrid{grid-template-columns:repeat(2,1fr) !important;gap:10px}
-        #works{padding:0 16px 60px !important}
-      }
-    `;
+    var s = document.createElement('style');
+    s.textContent = [
+      '.vgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;width:100%;align-items:start}',
+      '.vcard{border-radius:12px;overflow:hidden;border:1px solid var(--line);background:rgba(255,255,255,0.02);transition:border-color .3s,box-shadow .3s,transform .3s;cursor:pointer}',
+      '.vcard:hover{border-color:rgba(255,107,53,0.4);box-shadow:0 20px 60px rgba(255,107,53,0.12);transform:translateY(-4px)}',
+      '.vcard.expanded{transform:none!important;border-color:rgba(255,107,53,0.6)!important;box-shadow:0 0 0 2px rgba(255,107,53,0.3),0 24px 60px rgba(255,107,53,0.2)!important;z-index:10;position:relative}',
+      '.vcard-frame{position:relative;width:100%;padding-top:177.78%;overflow:hidden;background:#0d0d0f;cursor:pointer}',
+      '.vcard-thumb-placeholder{position:absolute;inset:0;background:linear-gradient(135deg,#0d0d0f,#1a1a2e);z-index:0}',
+      '.vcard-canvas{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .4s;z-index:1}',
+      '.vcard-play-btn{position:absolute;inset:0;z-index:2;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.25);transition:opacity .25s}',
+      '.vcard-play-btn::before{content:"";width:54px;height:54px;border-radius:50%;background:rgba(255,107,53,0.15);border:1.5px solid rgba(255,107,53,0.8);position:absolute;transition:all .25s;backdrop-filter:blur(6px)}',
+      '.play-tri{width:0;height:0;border-top:10px solid transparent;border-bottom:10px solid transparent;border-left:18px solid #fff;margin-left:4px;position:relative;z-index:1}',
+      '.vcard:hover .vcard-play-btn::before{background:rgba(255,107,53,0.45);transform:scale(1.1);box-shadow:0 0 30px rgba(255,107,53,0.5)}',
+      '.vcard-frame.playing .vcard-play-btn{opacity:0;pointer-events:none}',
+      '.vcard-frame.playing .vcard-canvas{opacity:0}',
+      '.vcard-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:3;opacity:0;pointer-events:none;transition:opacity .3s;background:#000}',
+      '.vcard-frame.playing .vcard-video{opacity:1;pointer-events:all}',
+      '.vcard-body{padding:14px 16px}',
+      '.vcard-name{font-family:"Syne",sans-serif;font-size:13px;font-weight:700;color:#fff;margin-bottom:5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}',
+      '.vcard-meta{display:flex;align-items:center;gap:8px}',
+      '.upload-hint{grid-column:1/-1;text-align:center;padding:80px 24px;color:rgba(255,255,255,.25)}',
+      '.upload-hint-icon{font-size:48px;margin-bottom:16px;opacity:.5}',
+      '.upload-hint-title{font-family:"Syne",sans-serif;font-size:18px;font-weight:700;color:rgba(255,255,255,.35)}',
+      '@media(max-width:768px){.vgrid{grid-template-columns:repeat(2,1fr)!important;gap:10px}#works{padding:0 16px 60px!important}}'
+    ].join('');
     document.head.appendChild(s);
   }
 
   function hookFilterTabs() {
-    document.querySelectorAll('.ftab').forEach(tab => {
-      tab.addEventListener('click', () => setTimeout(renderGrid, 10));
+    document.querySelectorAll('.ftab').forEach(function(tab) {
+      tab.addEventListener('click', function() {
+        setTimeout(function() {
+          var active = document.querySelector('.ftab.active');
+          var filter = active ? (active.dataset.filter || 'all') : 'all';
+          renderGrid(filter);
+        }, 10);
+      });
     });
   }
 
   function init() {
     injectStyles();
-    loadVideos();
+    renderGrid('all');
     hookFilterTabs();
   }
 
